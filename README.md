@@ -49,14 +49,7 @@ No frontend framework (React, Vue, etc.) was used — all rendering is done via 
 
 ---
 
-## Known Limitations
 
-- **API key is currently exposed client-side.** Since this is a pure frontend project with no backend, the TMDB API key is visible in `script.js`. In a production setting, this would be moved behind a lightweight backend/serverless proxy so the key is never exposed to the browser.
-- **No error handling.** If the TMDB request fails (network issue, rate limit, invalid key), the app currently fails silently rather than showing a user-facing error message.
-- **No loading state.** There's no spinner or placeholder shown while results are being fetched.
-- **Hover-based overview doesn't work on touch devices.** Since the overview panel is triggered by `:hover`, mobile/touch users currently have no way to view a movie's synopsis, despite the layout being otherwise fully responsive.
-
----
 
 ## Possible Future Improvements
 
